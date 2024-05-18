@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+</head>
+<body>
+        <div class="container mt-5">
+            <form method="post">
+                {% csrf_token %}
+                <label>ENTER YOUR EMAIL:</label>
+                <input type="email" name="email">
+                <br> <br>
+
+                <label>ENTER YOUR NAME:</label>
+                <input type="text" name="username">
+                <br> <br>
+
+                <input type="submit" value="SEND MAIL">
+                <input type="reset" value="RESET">
+            </form>
+        </div>
+</body>
+</html>
